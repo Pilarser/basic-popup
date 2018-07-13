@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Which? Popup</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body onload="myPopup()">
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">Title</div>
+    </header>
+    <!-- Static website -->
+    <section id="main">
+        <div class="inner">
+            <!-- One -->
+            <section id="one" class="wrapper style1">
+                <div class="image fit flush">
+                    <img src="img/dummy-sample.jpg" alt="background image" />
+                </div>
+                <header class="special">
+                    <h2>Fringilla Fermentum Tellus</h2>
+                    <p>vehicula urna sed justo bibendum</p>
+                </header>
+                <div class="content">
+                    <p>Curabitur eget semper ante. Morbi eleifend ultricies est, a blandit diam vehicula vel. Vestibulum porttitor nisi quis viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet vel. Vestibulum et efficitur urna. Duis velit nulla, interdum sed felis sit amet, facilisis auctor nunc. Cras luctus urna at risus feugiat scelerisque nec sed diam. </p>
+                    <p>Nunc fringilla metus odio, at rutrum augue tristique vel. Nulla ac tellus a neque ullamcorper porta a vitae ipsum. Morbi est sapien, hendrerit quis mi in, aliquam bibendum orci. Vestibulum imperdiet nibh vitae maximus posuere. Aenean sit amet nibh feugiat, condimentum tellus eu, malesuada nunc. Mauris ac pulvinar turpis, sit amet pharetra est. Ut bibendum justo condimentum, vehicula ex vel, venenatis libero. Etiam vehicula urna sed justo bibendum, ac lacinia nunc pulvinar. Integer nec velit orci. Vestibulum pellentesque varius dapibus. Morbi ullamcorper augue est, sed luctus orci fermentum dictum. Nunc tincidunt, nisl consequat convallis viverra, metus nisl ultricies dui, vitae dapibus ligula urna sit amet nibh. Duis ut venenatis enim.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- Static website -->
+    <div class="popup">
+        <div class="navbar fixed-bottom">
+            <div class="avatar">
+                <img src="img/magazine-money.png" alt="Magazine image">
+                <div class="avatar_box">
+                    <img src="img/closer.png" alt="Close image" onclick="closePopup()">
+                    <h2>Don't leave your finances to chance</h2>
+                    <button class="btn standard-btn" onclick="onButtonClick()">Try Which? Money for £1</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
